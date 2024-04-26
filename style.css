@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+.fjalla-one-regular {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+ 
+.fira-code {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+body {
+    background-image: url(roman.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container{
+    align-items: center;
+    text-align: center;
+}
+.container h1{
+    backdrop-filter: blur(50px);
+    font-size: 40px;
+    font-family: "Anton", sans-serif ;
+    margin-right: 270px;
+    margin-left: 270px;
+    border: 3px solid #00ff1e;
+    border-radius: 70px;
+}
+#Roman{
+    font-family: "Fira Code", monospace;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 25px;
+    border: 3px solid #00ff1e;
+    backdrop-filter: blur(50px);
+    color: yellow;
+}
+header{
+    border: 2px solid #465bd1;
+    margin: 10px;
+    font-family: sans-serif;
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px yellow;
+    backdrop-filter: blur(10px);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.logo h2{
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 5px;
+}
+.texto-logo{
+    flex-direction: column;
+    text-decoration: underline;
+}
+.texto-logo h4{
+    color: antiquewhite;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+}
+.texto-logo h3{
+    color: antiquewhite;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 35px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav a{
+    font-weight: 800;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: white;
+}
+.container-equipos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.item-grid{
+    border: 3px solid #00ff1e;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    width: 280px;
+    backdrop-filter: blur(10px);
+}
+.item-grid:hover{
+    background-color: #465bd1;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3%);
+}
+.item-grid img{
+    height: 160px;
+    width: 160px;
+    
+}
+.tabla-desktop{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Anton", sans-serif ;
+}
+.tabla-desktop th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+.tabla-desktop th {
+    background-color: #00ff1e;
+    color: #465bd1;
+}
+.tabla-desktop td{
+    background-color: #465bd1;
+    color: #00ff1e;
+}
+.container-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer{
+    background-color: #02236d;
+    padding: 80px;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-links{
+    /* width: 15%; */
+    padding: 0 15px;
+}
+.footer-links h4{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00C3FF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.social-links a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+}
+.social-links a:hover{
+    background-color: #00C3FF;
+}
+@media (max-width:700px){
+    body{
+        background-image: url(riquelmemobile.jpg);
+    }
+ 
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+    .container h1{
+        backdrop-filter: blur(50px);
+        font-size: 30px;
+        font-family: "Anton", sans-serif ;
+        margin-right: 170px;
+        margin-left: 170px;
+        border: 3px solid #00ff1e;
+        border-radius: 30px;
+    }
+}
